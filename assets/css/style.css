@@ -91,10 +91,20 @@ a:hover{
 .hidden_card{
 	visibility: hidden;
 }
+.enroll-box{
+    border-left: 1px solid #7f7f7f;
+}
+
+
+
+
 @media screen and (max-width: 576px){
   .hidden_card{
     display: none;
-  }  
+  }
+  .enroll-box{
+    border-left: 0px;
+  } 
 }
 
 
