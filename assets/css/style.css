@@ -98,10 +98,12 @@ a:hover{
 
 
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
   .hidden_card{
     display: none;
   }
+}
+@media screen and (max-width: 576px){ 
   .enroll-box{
     border-left: 0px;
   } 
