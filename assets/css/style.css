@@ -82,7 +82,7 @@ a:hover{
 }*/
 
 
-/*-------------- Main ------------*/
+/*-------------- Index Main ------------*/
 
 
 .card-title{
@@ -95,8 +95,10 @@ a:hover{
     border-left: 1px solid #7f7f7f;
 }
 
-
-
+.sticky_form{
+    position: sticky;
+    top: 10rem;
+}
 
 @media screen and (max-width: 768px){
   .hidden_card{
@@ -110,15 +112,41 @@ a:hover{
 }
 
 
-.sticky_form{
-	position: sticky;
-	top: 10rem;
+/*--------------- HTML Main ---------------*/
+
+.text{
+    position: absolute;
+    top: 215px;
+    right: 200px;
+    font-weight: 700;
+    font-size: 35px;
+    width: 150px;
+}
+.jumbotron .list-group{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.jumbotron .list-group .list-item{
+    margin-bottom: 10px;
+    width: 48%;
+    font-size: 15px;
+    position: relative;
+    list-style-type: none;
+}
+.jumbotron .list-group .list-item:before{
+    margin-right: 10px;
+    font: normal normal normal 16px/1 FontAwesome;
+    content: '\f0a9';
+    color: #B3121A;
 }
 
 
-
-
-/*-------------footer---------------------*/
+/*--------------- Footer ---------------*/
 .parallax_bg {
     display: block;
     position: absolute;
