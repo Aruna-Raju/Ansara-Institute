@@ -2,7 +2,7 @@ body{
 	font-family: 'Changa', sans-serif;
 	/*font-family: 'Roboto Slab', serif;*/
 	font-size: 16px;
-	background-color: #F5F5F5;
+	background-color: #F9F9F9;
 }
 /*main{
 	background-color: #F2F2F2;
@@ -114,13 +114,17 @@ a:hover{
 
 /*--------------- HTML Main ---------------*/
 
-.text{
+.banner{
+    position: relative;
+}
+.banner_text{
     position: absolute;
-    top: 215px;
-    right: 200px;
+    top: 15%;
+    right: 15%;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 3.5vw;
     width: 150px;
+    color: #323232;
 }
 .jumbotron .list-group{
     margin: 0;
@@ -145,6 +149,30 @@ a:hover{
     color: #B3121A;
 }
 
+.tab-content{
+    background-color: #fff;
+    border-left: 1px solid #dcdcdc;;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #495057!important;
+    background-color: #fff!important;
+    border-top: 4px solid #404040;
+}
+.nav-tabs .nav-link{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: #B3121A;
+    color: #fff;
+    margin-right: 1px!important;
+}
+
+.tab-content h4{
+    background-color: rgba(179,18,26,0.5);
+    padding: 5px;
+    font-weight: 700;
+}
 
 /*--------------- Footer ---------------*/
 .parallax_bg {
@@ -162,7 +190,7 @@ a:hover{
     color:#b4b4b4;
 }
 .footer h4{
-    color:white;
+    color: #0077fd;
 }
 .footer .bt-nav li a{
     color:#b4b4b4!important;
