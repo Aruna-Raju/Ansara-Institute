@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/80895110d5.js"></script>
 
+    <!-- anime -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -135,19 +138,23 @@
       </nav>
     </header>
 
-
-
     <main>
       <div class="container-fluid p-0">
         <div class="row m-0 p-0 banner">
-          <img src="assets/images/banner3.jpg" class="img-fluid w-100">
-          <div class="banner_text" data-aos="fade-right"><span class="text_content">Best HTML Training in Bangalore</span></div>
+          <img src="assets/images/banner3.jpg" class="img-fluid w-100" style="opacity: 0.7">
+          <div class="banner_text">
+            <h1 class="ml7">
+              <span class="text-wrapper">
+                <span class="letters">Best HTML Training in Bangalore</span>
+              </span>
+            </h1>            
+          </div>
         </div>
       </div>
       <div class="container-fluid my-3 my-sm-5">
         <div class="row">
           <div class="col-12 col-sm-6 col-md-9 px-2">
-            <div class="container">
+            <div class="container px-sm-0 px-md-5">
               <div class="row m-0">
                 <h3>About HTML Training</h3>
                 <div class="wht_html col-12">
@@ -174,9 +181,9 @@
                     </ul>
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 px-sm-0 px-md-3">
                   <!-- Nav tabs -->
-                  <ul class="nav nav-tabs nav-fill" role="tablist">
+                  <ul class="nav nav-tabs nav-fill d-sm-block d-md-flex" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active" data-toggle="tab" href="#course_content">Course Contents</a>
                     </li>
@@ -190,12 +197,13 @@
 
                   <!-- Tab panes -->
                   <div class="tab-content">
-                    <div id="course_content" class="container tab-pane active">
+                    <div id="course_content" class="container tab-pane active py-3">
                       <br>
                       <h3>HTML 5</h3>
-                      <div class="col-12 border px-5">
+                      <div class="col-12 border px-5 py-4">
+                        
+                        <h4>History of HTML</h4>
                         <ul class="list-group">
-                          <h4>History of HTML</h4>
                           <li class="list-item">What Is HTML5?</li>
                           <li class="list-item">History And Major Actors</li>
                             <ul>
@@ -203,7 +211,6 @@
                               <li>What Is The W3C?</li>
                               <li>What Is The WHATWG?</li>
                             </ul>
-
                           <li class="list-item">Vision And Philosophy Behind HTML5</li>
                             <ul>
                               <li>Compatibility</li>
@@ -211,8 +218,9 @@
                               <li>Interoperability</li>
                               <li>Universal Access</li>
                             </ul>
-                          
-                          <h4>Getting Started with HTML5</h4>
+                        </ul>
+                        <h4>Getting Started with HTML5</h4>
+                        <ul class="list-group">
                           <li class="list-item">The State Of Browser Support</li>
                           <li class="list-item">Feature Detection</li>
                           <li class="list-item">Support For Legacy Browsers</li>
@@ -220,9 +228,10 @@
                             <li>Graceful Degradation</li>
                             <li>Emulation</li>
                           </ul>
-                          <li class="list-item">Developer Touls</li>
-                          
-                          <h4>Structure of a Web Page</h4>                        
+                          <li class="list-item">Developer Tools</li>
+                        </ul>
+                        <h4>Structure of a Web Page</h4>
+                        <ul class="list-group">        
                           <li class="list-item">HTML5 DOCTYPE</li>
                           <li class="list-item">Page Encoding</li>
                           <li class="list-item">HTML5 Markup</li>
@@ -234,16 +243,18 @@
                             </ul>
                           <li class="list-item">HTML5 And CSS3</li>
                           <li class="list-item">Browser Support</li>
-
-                          <h4>Forms</h4>
+                        </ul>
+                        <h4>Forms</h4>
+                        <ul class="list-group">
                           <li class="list-item">What Are The Needs For Web Applications?</li>
                           <li class="list-item">Current Sulutions</li>
                           <li class="list-item">New Input Types</li>
                           <li class="list-item">New Attributes</li>
                           <li class="list-item">Form Validation</li>
                           <li class="list-item">Browser Support</li>
-
-                          <h4>Audio and Video</h4>
+                        </ul>
+                        <h4>Audio and Video</h4>
+                        <ul class="list-group">
                           <li class="list-item">The State of Web Audio And Video Based On Plug-in</li>
                           <li class="list-item">The State Of Audio And Video Codec (e.g. H.264, WebM, etc.)</li>
                             <ul>
@@ -253,8 +264,9 @@
                           <li class="list-item">Attributes And Methods</li>
                           <li class="list-item">Understanding Audio/Video Events</li>
                           <li class="list-item">Customizing Audio/Video Contruls</li>
-
-                          <h4>HTML5 Canvas</h4>
+                        </ul>
+                        <h4>HTML5 Canvas</h4>
+                        <ul class="list-group">
                           <li class="list-item">Overview Of Graphics In The Browser</li>
                             <ul>
                               <li>Canvas Vs. SVG</li>
@@ -284,12 +296,30 @@
                       
                     </div>
                     <div id="duration" class="container tab-pane fade"><br>
-                      <h3>Menu 1</h3>
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <table class="table border">
+                        <tr>
+                          <td><strong>Regular</strong> : 3 Hours Per day</td>
+                          <td><strong>Fast Class</strong>&nbsp: 2 Hours Per day : 10 days</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Weekdays</strong> : Available</td>
+                          <td><strong>Weekend</strong> : Available</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Online Training</strong> : Available</td>
+                          <td><strong>Class Room Training</strong> : Available</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Course Fee</strong> : Talk to Our Team</td>
+                          <td><strong>Duration</strong> : 30 Hours</td>
+                        </tr>
+                      </table>
                     </div>
-                    <div id="review" class="container tab-pane fade"><br>
-                      <h3>Menu 2</h3>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <div id="review" class="container tab-pane fade">
+                      <br>
+                      <br>
+                      <br>
+                      
                     </div>
                   </div>
 
@@ -339,8 +369,6 @@
         </div>
       </div>
 
-      
-      
     </main>
     
 
@@ -389,6 +417,31 @@
               $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
               $(this).removeClass('open');
           });
+    </script>
+
+    <script type="text/javascript">
+      // Wrap every letter in a span
+      var textWrapper = document.querySelector('.ml7 .letters');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+      anime.timeline({loop: true})
+        .add({
+          targets: '.ml7 .letter',
+          translateY: ["1.1em", 0],
+          translateX: ["0.55em", 0],
+          translateZ: 0,
+          rotateZ: [180, 0],
+          duration: 750,
+          easing: "easeOutExpo",
+          delay: (el, i) => 50 * i
+        }).add({
+          targets: '.ml7',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });
+
     </script>
 
   </body>
