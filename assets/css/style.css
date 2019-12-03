@@ -112,6 +112,8 @@ a:hover{
 }
 
 
+
+
 /*--------------- HTML Main ---------------*/
 
 .banner{
@@ -165,6 +167,12 @@ a:hover{
     padding: 5px;
     font-weight: 700;
 }
+.cont_1 h4, .cont_2 h4{
+    color: #b3121a;
+}
+.cont_1 p, .cont_2 p{
+    text-indent: 50px;
+}
 
 /*.banner_text{
     position: absolute;
@@ -216,10 +224,10 @@ a:hover{
     background-size: cover;
 }
 .footer p{
-    color:#b4b4b4;
+    color: #b4b4b4;
 }
 .footer h4{
-    color: #0077fd;
+    color: crimson;
 }
 .footer .bt-nav li a{
     color:#b4b4b4!important;
