@@ -2,7 +2,7 @@ body{
 	font-family: 'Changa', sans-serif;
 	/*font-family: 'Roboto Slab', serif;*/
 	font-size: 16px;
-	background-color: #F9F9F9;
+	background-color: #F5F5F5;
 }
 /*main{
 	background-color: #F2F2F2;
@@ -84,7 +84,9 @@ a:hover{
 
 /*-------------- Index Main ------------*/
 
-
+.card{
+    border: none;
+}
 .card-title{
 	font-weight: 700;
 }
